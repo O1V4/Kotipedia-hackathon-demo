@@ -30,7 +30,6 @@ def instructions(question, data_list):
     Keep your answer concise, brief and to the point (also focus on multiple key points and not just one).
     The most important parts are: try to use as many stats/numerical values for the reasoning as possible that are likely provided in the user's data and 2. strong emphasis on sustainability.
 
-    
 
     Next will be the informatian that the user answered:
 
@@ -47,7 +46,6 @@ def instructions(question, data_list):
     "{data_list[3]}"
 
     
-
     And now the user's question is the following:
     {question} 
     '''
