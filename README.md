@@ -1,3 +1,3 @@
 # Kotipedia - hackathon demo
 
-Streaming text effect with flask and OpenAI API.
+Implemented text Streaming effect with flask and OpenAI API.
