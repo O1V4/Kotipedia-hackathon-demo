@@ -29,6 +29,7 @@ def instructions(question, data_list):
     personal as possible based on the data from the user that was provided before the question.
     We want you to consider sustainable solutions and tips to the question the user asks.
     Keep your answer as concise, brief and to the point as possible (but also don't focus only on one keypoint).
+    Meaning try to keep it under 700 characters!
     The most important parts of the answer are:
     1. try to use as many stats/numerical values for the reasoning as possible that are likely provided in the user's data and 
     2. strong emphasis on sustainability.
