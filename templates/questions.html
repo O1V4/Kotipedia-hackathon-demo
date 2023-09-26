@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="static/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Questions</title>
+</head>
+<body>
+    <h1>Question</h1>
+    <p>Ask a question about sustainable housing:</p>
+
+    <form action="/ask" method="post">
+        <label for="question">Your Question (Required):</label>
+        <textarea id="question" name="question" rows="4" cols="50" required></textarea>
+        <br><br>
+        <input type="submit" value="Ask">
+    </form>
+
+    {% if answer %}
+    <h2>Your Answer:</h2>
+    <p>{{ answer }}</p>
+    {% endif %}
+
+</body>
+</html>

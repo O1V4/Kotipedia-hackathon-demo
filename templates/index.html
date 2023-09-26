@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<link rel="stylesheet" href="static/main.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<body>
+  <h1>Kotipedia</h1>
+  <h2><i>—Your Personal Sustainable Housing Advicer</i></h2>
+
+  <p>
+    Answer to the best of your knowledge and we will try to help you with ideas<br>to have more sustainable household and even save some extra money.<br> <b>Try to describe in brief sentences the following about your home:</b>
+  </p>
+
+  <form action="/data" method="POST">
+    <label for="comment1"> Electricity consumption; electricity bill,<br> kWh usage, etc. (Required):</label>
+    <textarea id="comment1" name="comment1" rows="4" cols="50" required></textarea>
+    <br>
+    <label for="comment2">House condition, heating system,<br> square-meter size m^2, etc. (Required):</label>
+    <textarea id="comment2" name="comment2" rows="4" cols="50" required></textarea>
+    <br>
+    <label for="comment3">Build year, most recent repair year, etc. (Required):</label>
+    <textarea id="comment3" name="comment3" rows="4" cols="50" required></textarea>
+    <br>
+    <label for="comment4">Additional information (Optional):</label>
+    <textarea id="comment4" name="comment4" rows="4" cols="50"></textarea>
+    <br>
+    <input type="submit" value="Submit">
+  </form>
+  <br>
+  <br>
+  <br>
+
+</body>
