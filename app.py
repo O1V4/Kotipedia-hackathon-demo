@@ -18,13 +18,20 @@ openai.api_key = getenv("OPENAI_API_KEY")
 
 def instructions(question, data_list):
     return f'''
-    I'm going to give you 4 categories about home owner's housing data. The categories are related to electricity usage (something like kWh), house specs (like area, heating method), years related to the house (the year of construction and etc), and the last one is additional information that the user might want to give. 
+    I'm going to give you 4 categories about home owner's housing data.
+    The categories are related to electricity usage (something like kWh), house specs (like area, heating method),
+    years related to the house (the year of construction and etc), and the last one is additional information that the user might want to give.
 
-    The user will ask you a question related to his/her housing situation that is probably concerning energy consumption or repairments or new heating methods/systems or everyday sustainable living.
+    The user will ask you a question related to his/her housing situation that is probably concerning energy consumption
+    or repairments or new heating methods/systems or everyday sustainable living.
 
-    We want you to answer with suggestions, recommendations and ideas as spesific and personal as possible based on the data from the user that was provided before the question. We want you to consider sustainable solutions and tips to the question the user asks. Keep your answer concise, brief and to the point (also focus on multiple key points and not just one). The most important parts are: try to use as many stats/numerical values for the reasoning as possible that are likely provided in the user's data and 2. strong emphasis on sustainability.
+    We want you to answer with suggestions, recommendations and ideas as spesific and personal as possible based on the data from the user that was provided before the question.
+    We want you to consider sustainable solutions and tips to the question the user asks.
+    Keep your answer concise, brief and to the point (also focus on multiple key points and not just one).
+    The most important parts are: try to use as many stats/numerical values for the reasoning as possible that are likely provided in the user's data and 2. strong emphasis on sustainability.
 
     
+
     Next will be the informatian that the user answered:
 
     1. Electricity consumption; electric bill, kWh usage, etc. (Required):
@@ -39,6 +46,7 @@ def instructions(question, data_list):
     4. Additional information (Optional):
     "{data_list[3]}"
 
+    
 
     And now the user's question is the following:
     {question} 
